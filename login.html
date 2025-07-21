@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - YogAyur Wellness</title>
+  <link rel="stylesheet" href="login-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="form-box">
+      <h2>Login to YogAyur</h2>
+      <form onsubmit="return validateLogin()">
+        <div class="input-box">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter Username" required />
+        </div>
+        <div class="input-box">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" required />
+        </div>
+        <p id="error-msg" class="error"></p>
+        <button type="submit" class="btn-login">Login</button>
+      </form>
+      <p class="note">Demo Credentials: admin / admin123</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
